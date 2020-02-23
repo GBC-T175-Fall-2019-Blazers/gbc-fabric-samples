@@ -7,6 +7,13 @@
 
 ---
 
+# Docker Compose File:
+gbc-fabric-samples/docker contains a modified docker compose file. The modification attaches an additional volume to map gbc-fabric-samples/chaincode to /opt/gopath/src/gbc-fabric-samples/chaincode directories.
+
+```
+./../../gbc-fabric-samples/chaincode/:/opt/gopath/src/gbc-fabric-samples/chaincode
+```
+
 # Enable Dev mode
 To enable dev more you need to modify the peer-base.yaml file under fabric-samples/first-network directory.
 
@@ -18,7 +25,11 @@ command: peer node start --peer-chaincodedev=true
 
 # Start Fabric
 
-The following script uses fabric-samples/first-network/byfn.sh script.
+The following script uses fabric-samples/first-network/byfn.sh script. This script calls the byfn.sh as follows:
+
+```
+./byfn.sh up -a -d 10 -t 90 -s couchdb -l node -f gbc-docker-compose-cli.yaml
+```
 
 ```shell
 cd ~/gbc-fabric-samples/mycode
