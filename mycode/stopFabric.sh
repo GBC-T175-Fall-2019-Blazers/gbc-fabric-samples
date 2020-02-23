@@ -4,11 +4,13 @@
 set -e
 
 FABRIC_SAMPLES_PATH="../../fabric-samples"
+GBC_DOCKER_COMPOSE_FILE="gbc-docker-compose-cli.yaml"
 
 echo ""
 echo "***************************************************************"
 echo "* GBC-Fabric-Samples:  Stopping...                            *"
 echo "***************************************************************"
+rm -f $FABRIC_SAMPLES_PATH/first-network/$GBC_DOCKER_COMPOSE_FILE
 cd $FABRIC_SAMPLES_PATH/first-network
 
 echo ""
