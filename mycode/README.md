@@ -10,6 +10,10 @@
 # Enable Dev mode
 To enable dev more you need to modify the peer-base.yaml file under fabric-samples/first-network directory.
 
+```
+command: peer node start --peer-chaincodedev=true
+```
+
 ![Alt text](images/enable_devmode_base_peer_base_yaml.png?raw=true "Install Chaincode")
 
 # Start Fabric
