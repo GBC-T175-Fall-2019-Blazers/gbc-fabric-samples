@@ -8,7 +8,7 @@
 ---
 
 # Docker Compose File:
-gbc-fabric-samples/docker contains a modified docker compose file. The modification attaches an additional volume to map gbc-fabric-samples/chaincode to /opt/gopath/src/gbc-fabric-samples/chaincode directories.
+gbc-fabric-samples/docker contains a modified docker compose file. The modification attaches an additional volume to map *gbc-fabric-samples/chaincode* to */opt/gopath/src/gbc-fabric-samples/chaincode* directories.
 
 ```
 ./../../gbc-fabric-samples/chaincode/:/opt/gopath/src/gbc-fabric-samples/chaincode
