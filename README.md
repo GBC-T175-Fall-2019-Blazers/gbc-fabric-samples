@@ -1,4 +1,1 @@
-# README.md
-
-GBC-175-HLF-Samples
-
+# README.md - GBC Fabric Samples
